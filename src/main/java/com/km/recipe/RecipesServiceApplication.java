@@ -1,0 +1,15 @@
+package com.km.recipe;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
+
+@SpringBootApplication
+@EnableAspectJAutoProxy
+public class RecipesServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(RecipesServiceApplication.class, args);
+	}
+
+}

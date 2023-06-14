@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  recipe-service:
+    container_name: recipe-service
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: recipe-service:latest
+    ports:
+      - '8080:8080'
+    networks:
+      - local-network
+
+networks:
+  local-network:
+    driver: bridge
