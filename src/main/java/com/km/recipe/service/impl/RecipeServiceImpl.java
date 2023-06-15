@@ -13,7 +13,6 @@ import com.km.recipe.exceptions.RecipeViolationException;
 import com.km.recipe.mappers.IngredientMapper;
 import com.km.recipe.mappers.InstructionMapper;
 import com.km.recipe.mappers.RecipeMapper;
-import com.km.recipe.service.contract.IngredientService;
 import com.km.recipe.service.contract.RecipeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -34,7 +33,6 @@ public class RecipeServiceImpl implements RecipeService {
 
     private final RecipeRepository repository;
     private final RecipeMapper recipeMapper;
-    private final IngredientService ingredientService;
     private final IngredientMapper ingredientMapper;
     private final InstructionMapper instructionMapper;
 
